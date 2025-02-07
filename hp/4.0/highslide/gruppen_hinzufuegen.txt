@@ -1,0 +1,3 @@
+class="highslide" onClick="return hs.expand(this, { slideshowGroup: 1 } )"
+
+usw..

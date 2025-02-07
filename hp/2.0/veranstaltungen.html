@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>Freiwillige Feuerwehr Lengenfeld</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_checkBrowser(NSvers,NSpass,NSnoPass,IEvers,IEpass,IEnoPass,OBpass,URL,altURL) { //v4.0
+  var newURL='', verStr=navigator.appVersion, app=navigator.appName, version = parseFloat(verStr);
+  if (app.indexOf('Netscape') != -1) {
+    if (version >= NSvers) {if (NSpass>0) newURL=(NSpass==1)?URL:altURL;}
+    else {if (NSnoPass>0) newURL=(NSnoPass==1)?URL:altURL;}
+  } else if (app.indexOf('Microsoft') != -1) {
+    if (version >= IEvers || verStr.indexOf(IEvers) != -1)
+     {if (IEpass>0) newURL=(IEpass==1)?URL:altURL;}
+    else {if (IEnoPass>0) newURL=(IEnoPass==1)?URL:altURL;}
+  } else if (OBpass>0) newURL=(OBpass==1)?URL:altURL;
+  if (newURL) { window.location=unescape(newURL); document.MM_returnValue=false; }
+}
+//-->
+</script>
+
+<link rel="SHORTCUT ICON" href="favicon.ico">
+<style>
+  /* Basis-Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hauptcontainer */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  /* Header */
+  .header {
+    background: url('bausteine/px_rot.png');
+    padding: 1rem;
+  }
+  
+  .header img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Content-Bereich */
+  .content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Navigation */
+  .nav-menu {
+    width: 250px;
+    background: url('bausteine/px_gelb.png');
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .nav-menu .nav-item {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .nav-menu .nav-item img {
+    max-width: 100%;
+    height: 35px;
+    display: block;
+  }
+  
+  /* Hauptinhalt */
+  .main-content {
+    flex: 1;
+    padding: 1rem;
+    background: url('bausteine/px_blau.png');
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+    
+    .nav-menu {
+      width: 100%;
+      align-items: center;
+    }
+    
+    .nav-menu .nav-item {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('bausteine/MP_startseite_hover.png','bausteine/MP_aktuelles_hover.png','bausteine/MP_mannschaft_hover.png','bausteine/MP_jugend_hover.png','bausteine/MP_ausruestung_hover.png','bausteine/MP_einsaetze_hover.png','bausteine/MP_kontakt_hover.png')">
+<div class="main-container">
+  <header class="header">
+    <img src="bausteine/b2.png" alt="Header">
+  </header>
+  
+  <div class="content">
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('startseite','','bausteine/MP_startseite_hover.png',1)">
+        <img src="bausteine/MP_startseite_normal.png" name="startseite" width="203" height="35" border="0" alt="Startseite">
+      </a>
+      
+      <a href="aktuelles.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('aktuelles','','bausteine/MP_aktuelles_hover.png',1)">
+        <img src="bausteine/MP_aktuelles_normal.png" name="aktuelles" width="203" height="35" border="0" alt="Aktuelles">
+      </a>
+      
+      <a href="mannschaft.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mannschaft','','bausteine/MP_mannschaft_hover.png',1)">
+        <img src="bausteine/MP_mannschaft_normal.png" name="mannschaft" width="203" height="35" border="0" alt="Mannschaft">
+      </a>
+      
+      <a href="jugend.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('jugend','','bausteine/MP_jugend_hover.png',1)">
+        <img src="bausteine/MP_jugend_normal.png" name="jugend" width="203" height="35" border="0" alt="Jugend">
+      </a>
+      
+      <a href="ausruestung.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Ausrüstung','','bausteine/MP_ausruestung_hover.png',1)">
+        <img src="bausteine/MP_ausruestung_normal.png" name="Ausrüstung" width="203" height="35" border="0" alt="Ausrüstung">
+      </a>
+      
+      <a href="feuerwehrhaus.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('feuerwehrhaus','','bausteine/MP_feuerwehrhaus_hover.png',1)">
+        <img src="bausteine/MP_feuerwehrhaus_normal.png" name="feuerwehrhaus" width="203" height="35" border="0" alt="Feuerwehrhaus">
+      </a>
+      
+      <div class="nav-item">
+        <img src="bausteine/MP_veranstaltungen_ausgewaehlt.png" width="203" height="35" alt="Veranstaltungen">
+      </div>
+      
+      <a href="einsaetze.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Einsätze','','bausteine/MP_einsaetze_hover.png',1)">
+        <img src="bausteine/MP_einsaetze_normal.png" name="Einsätze" width="203" height="35" border="0" alt="Einsätze">
+      </a>
+      
+      <a href="kontakt.html" class="nav-item" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kontakt','','bausteine/MP_kontakt_hover.png',1)">
+        <img src="bausteine/MP_kontakt_normal.png" name="kontakt" width="203" height="35" border="0" alt="Kontakt">
+      </a>
+    </nav>
+    
+    <main class="main-content">
+      <iframe src="veranstaltungen_txt.html" name="textframe">
+        <!-- Fallback-Content -->
+      </iframe>
+    </main>
+  </div>
+</div>
+</body>
+</html>

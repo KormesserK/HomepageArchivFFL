@@ -1,0 +1,29 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	scrollbar-arrow-color: #8B0000;
+	scrollbar-3dlight-color: #8B0000;
+	scrollbar-shadow-color: #8B0000;
+}
+.normtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.fetttext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.grosstext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+a {
+	color: #C10A0B;
+	text-decoration: underline;
+}
+a:hover {
+	color: #C10A0B;
+	text-decoration: none;
+}
